@@ -1,0 +1,80 @@
+html, body{
+    flex: flex-wrap;
+  }
+  nav{
+    position: fixed;
+    float: left;
+  }
+  li{
+    list-style-type: none;
+    display: inline;
+  }
+  h3, form{
+      text-align: center;
+  }
+  button{
+    border: none;
+    border: black solid 3px;
+    background-color: white;
+    font-size: 16px;
+    padding: 10px 40px 10px 40px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  article{
+    padding: 10px;
+  }
+  .nav-link{
+    color: black;
+  }
+  #buy-sell-trade{
+    display: flex;
+  }
+  #video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about-section{
+    padding: 10px;
+  }
+  #about-header{
+    text-align: center;
+  }
+  #about-img{
+    max-width: 40%;
+    height: auto;
+    display: flex;
+    float: left;
+  }
+  #about-p{
+    display: flex;
+    float: right;
+  }
+  .about-sect{
+    display: none;
+  }
+
+  @media only screen and (max-width: 600px){
+    #buy-sell-trade{
+      flex-direction: column;
+  }
+    #video{
+      max-width: 400px;
+      height: auto;
+    }
+    .sell{
+    text-align: right;
+  }
+  }
