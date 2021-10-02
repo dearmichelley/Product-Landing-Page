@@ -1,5 +1,8 @@
+*{
+  box-sizing: border-box;
+}
 html, body{
-    flex: flex-wrap;
+    flex-wrap: wrap;
   }
   nav{
     position: fixed;
@@ -46,35 +49,37 @@ html, body{
     margin-left: auto;
     margin-right: auto;
   }
-  #about-section{
-    padding: 10px;
-  }
-  #about-header{
-    text-align: center;
+  .about-sect{
+    display: none;
   }
   #about-img{
     max-width: 40%;
     height: auto;
-    display: flex;
-    float: left;
+    padding: 20px;
   }
-  #about-p{
-    display: flex;
-    float: right;
+  #about-content{
+    align-self: center;
+    justify-content: baseline;
   }
-  .about-sect{
-    display: none;
+  #about-header{
+    text-align: center;
   }
 
   @media only screen and (max-width: 600px){
-    #buy-sell-trade{
-      flex-direction: column;
-  }
+    #nav-bar{
+
+    }
     #video{
       max-width: 400px;
       height: auto;
     }
+    #buy-sell-trade{
+      flex-wrap:wrap;
+    }
     .sell{
-    text-align: right;
-  }
+      text-align: right;
+    }
+    .about-sect{
+      flex-wrap: wrap;
+    }
   }

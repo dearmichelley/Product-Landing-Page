@@ -5,7 +5,7 @@ const sellBtn = document.querySelector('#sell-btn');
 const tradeBtn = document.querySelector('#trade-btn')
 const mainSection = document.querySelector('#product-landing-page');
 const imgHeader = document.querySelector('#header-img');
-const aboutSection = document.querySelector('#about-section');
+const aboutSection = document.querySelector('.about-sect');
 console.log(aboutBtn);
 console.log(mainSection);
 
@@ -13,7 +13,7 @@ function aboutDisplay() {
     aboutBtn.addEventListener('click', function displayAbout() {
         mainSection.style.display = 'none';
         imgHeader.style.display = 'none';
-        aboutSection.style.display = 'block';
+        aboutSection.style.display = 'flex';
     });
 }
 aboutDisplay();
