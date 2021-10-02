@@ -1,3 +1,4 @@
+const mediaQ = window.matchMedia("(max-width: 600px)")
 const homeBtn = document.querySelector('#home');
 const aboutBtn = document.querySelector('#about');
 const buyBtn = document.querySelector('#buy-btn');
@@ -6,8 +7,12 @@ const tradeBtn = document.querySelector('#trade-btn')
 const mainSection = document.querySelector('#product-landing-page');
 const imgHeader = document.querySelector('#header-img');
 const aboutSection = document.querySelector('.about-sect');
+const navLink = document.querySelectorAll('.nav-link');
+const toggleBtn = document.querySelector('.toggle');
+console.log(toggleBtn);
 console.log(aboutBtn);
 console.log(mainSection);
+console.log(navLink)
 
 function aboutDisplay() {
     aboutBtn.addEventListener('click', function displayAbout() {
@@ -41,3 +46,17 @@ function otherBtns() {
     })
 };
 otherBtns();
+
+function toggleNav() {
+    toggleBtn.addEventListener('click', function responsiveNav() {
+        for (let i = 0; i < navLink.length; i++) {
+            if (navLink[i].style.display === 'none') {
+                navLink[i].style.display = 'block';
+            } else {
+                navLink[i].style.display = 'none';
+            }
+        }
+    }
+    )
+}
+toggleNav();
